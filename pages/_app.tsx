@@ -11,7 +11,7 @@ const  App: React.FC<AppProps> = ({ Component, pageProps }) => {
      boxShadow="md" marginY={4} maxWidth="container.xl" padding={4}>
       <VStack marginBottom={6}>
         <Heading>Tu plato</Heading>
-        <Text>Descripcion de un plato </Text>
+        <Text>Descripcion Lorem ipsue ex ratione voluptatem. Ratione deleniti libero rerum impedit est soluta dicta, eius officia. </Text>
       </VStack>
       <Divider marginY={6}/>
       <Component {...pageProps} />

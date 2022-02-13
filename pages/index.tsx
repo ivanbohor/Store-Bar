@@ -1,7 +1,7 @@
 import * as React from "react";
 import { GetStaticProps } from "next";
-import { Product } from "./product/types";
-import api from "./product/api";
+import { Product } from "../types";
+import api from '../api'
 import { Box, Button, Flex, Grid, Image, Link, Stack, Text } from "@chakra-ui/react";
 import {motion, AnimateSharedLayout} from "framer-motion";
 interface Props {
