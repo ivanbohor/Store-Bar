@@ -50,18 +50,24 @@ const IndexRoute: React.FC<Props> = ({products}) => {
      ))} 
     </Grid>
     {Boolean(cart.length) && (
-    <Flex alignItems="center" justifyContent="center" 
-    bottom={4} position="sticky">
+    <Flex alignItems="center" 
+    animate={{scale:1}}
+    as={motion.div}
+    exit={{scale: 0}}
+    justifyContent="center" 
+    bottom={4} 
+    position="sticky">
       <Button
-      padding={4}
-     isExternal 
-     as={Link}
-    href={`https://wa.me/5491131155989?text=-BAR ESPAÑOL-MI PEDIDO\n${encodeURIComponent(text)}`}
-    colorScheme="whatsapp"
-    size="lg"
-    width="fit-content"
-    leftIcon={<Image src="https://icongr.am/fontawesome/whatsapp.svg?size=32&color=ffffff"/>}>Completar Pedido({cart.length} productos)
-    </Button>
+        padding={4}
+        isExternal 
+        as={Link}
+        href={`https://wa.me/5491131155989?text=-BAR ESPAÑOL-MI PEDIDO\n${encodeURIComponent(text)}`}
+        colorScheme="whatsapp"
+        size="lg"
+        width="fit-content"
+        leftIcon={
+        <Image src="https://icongr.am/fontawesome/whatsapp.svg?size=32&color=ffffff" alt="wtsp"/>}>Completar Pedido({cart.length} productos)
+      </Button>
     </Flex>
     )}
  </Stack>

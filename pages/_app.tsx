@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, ChakraProvider, Container, Divider, Heading, Image, Text, VStack } from '@chakra-ui/react'
+import { Box, ChakraProvider, Container, Divider, Heading, Text, VStack } from '@chakra-ui/react'
 import {AppProps} from "next/app";
 import theme from '../theme';
 
