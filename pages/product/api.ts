@@ -2,6 +2,7 @@ import axios from "axios";
 import {Product} from "./types";
 import Papa from "papaparse";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
     list: async (): Promise<Product []> => {
         return axios
