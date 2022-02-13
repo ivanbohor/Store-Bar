@@ -3,7 +3,7 @@ import { GetStaticProps } from "next";
 import { Product } from "./product/types";
 import api from "./product/api";
 import { Box, Button, Flex, Grid, Image, Link, Stack, Text } from "@chakra-ui/react";
-import {motion, AnimatePresence, AnimateSharedLayout} from "framer-motion";
+import {motion, AnimateSharedLayout} from "framer-motion";
 interface Props {
   products: Product [];
 }
@@ -29,7 +29,7 @@ const IndexRoute: React.FC<Props> = ({products}) => {
     )
 
   return (
-  <AnimateSharedLayout type="crossfade">
+  <AnimateSharedLayout >
     <Stack spacing={6}> 
     <Grid gridGap={6} templateColumns="repeat(auto-fill, mimmax(240px, 1fr))">
     {products.map((product)=>( 
