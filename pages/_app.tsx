@@ -10,7 +10,6 @@ const  App: React.FC<AppProps> = ({ Component, pageProps }) => {
     <Container backgroundColor="white"
      boxShadow="md" marginY={4} maxWidth="container.xl" padding={4}>
       <VStack marginBottom={6}>
-        <Image borderRadius={9999} src={"//placehold.it/128x128"} ></Image>
         <Heading>Tu plato</Heading>
         <Text>Descripcion de un plato </Text>
       </VStack>
